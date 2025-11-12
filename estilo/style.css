@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fundo:#CACACA;
+    --backround-header:#f0f8ff8a; /*+++cor de fundo*/
+    --background-main:;
+    --texto-principal:#2e2c2c;
+    --texto-inverso:#ceccccf1;
+    --texto-gradient-01:#353ff8fe; /*cor de backround de alguns elementos*/
+    --text-gradient-02:#60acf8; /*cor de backround de alguns elementos*/
+    --text-shadow:#0000005e;
+    --backround-text:#3d8dde;
+    --background-inverso:#3835f8fe;
+    
+} 
+
+body{
+    background-color:var(--fundo);
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-image:linear-gradient(to top, var(--backround-header), var(--fundo));
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
+header>h1{
+    width: 5%;
+    font-size: 1.5em;
+    font-weight:bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:5px;
+}
+
+header h1>a{
+    background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0.5px 0.5px 4px var(--text-shadow);
+    
+}
+menu{
+    display: ;
+}
+nav{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content: center;
+    row-gap: 5px;
+    column-gap: 15px;
+    
+}
+
+nav a{
+    color: var(--texto-gradient-01);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 4px var(--text-shadow);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#next-contat{
+    background-color: var(--backround-text);
+    color: var(--texto-inverso);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    text-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#next-contat:hover{
+    background-color: var(--background-inverso);
+    color: var(--texto-inverso);
+    text-shadow:0.5px 0.5px 1px var(--fundo);
+    box-shadow: var(--text-shadow) 1.95px 1.95px 2.6px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #desktop-box{
+        display: none;
+    }
+}
+
