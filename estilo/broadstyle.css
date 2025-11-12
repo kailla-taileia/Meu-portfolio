@@ -7,16 +7,18 @@
 }
 
 :root{
-    --fundo:#CACACA;
-    --backround-header:#f0f8ff8a; /*+++cor de fundo*/
-    --background-main:;
+    --fundo:#dddddd;
+    --backround-header:#8989898a; /*+++cor de fundo*/
+    --background-main:#fffdfd25;
     --texto-principal:#2e2c2c;
     --texto-inverso:#ceccccf1;
     --texto-gradient-01:#353ff8fe; /*cor de backround de alguns elementos*/
     --text-gradient-02:#60acf8; /*cor de backround de alguns elementos*/
+    --text-gradient-03:#60dcf8;
     --text-shadow:#0000005e;
     --backround-text:#3d8dde;
     --background-inverso:#3835f8fe;
+    --icons-text-highlights:#1f568d44;
     
 }  
 
@@ -43,7 +45,7 @@ header>h1{
 }
 header h1>a{
     background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02));
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     text-shadow: 0.5px 0.5px 4px var(--text-shadow);
     
@@ -72,10 +74,54 @@ nav a:hover{
 }
 
 #next-contat:hover{
-background-color: var(--background-inverso);
-color: var(--texto-inverso);
-text-shadow:0.5px 0.5px 1px var(--fundo);
-box-shadow: var(--text-shadow) 1.95px 1.95px 2.6px;
-text-decoration: none;
+    background-color: var(--background-inverso);
+    color: var(--texto-inverso);
+    text-shadow:0.5px 0.5px 1px var(--fundo);
+    box-shadow: var(--text-shadow) 1.95px 1.95px 2.6px;
+    text-decoration: none;
 }
 
+main{
+    display: grid;
+    grid-template-columns:auto 90vw auto;
+    
+}
+section{
+    margin-top: 10px;
+    background-color: var(--background-main);
+    border-radius: 8px;
+}
+#presentation{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.icons-text-highlights{
+    background-color: var(--icons-text-highlights);
+    color: var(--background-inverso);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+span{
+    display: block;
+    background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02), var(--text-gradient-02), var(--text-gradient-03));
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0.5px 0.5px 2px var(--text-shadow);
+    font-size: 1.8em;
+}
+
+#presentation h1{
+    
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+}
