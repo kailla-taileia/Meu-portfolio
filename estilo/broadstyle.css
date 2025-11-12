@@ -18,53 +18,34 @@
     --backround-text:#3d8dde;
     --background-inverso:#3835f8fe;
     
-} 
+}  
 
 body{
     background-color:var(--fundo);
     height: 100vh;
     width: 100vw;
 }
-
 header{
     background-image:linear-gradient(to top, var(--backround-header), var(--fundo));
-    height: 80px;
+    height: 100px;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
-    gap: 10px;
 }
-
 header>h1{
     width: 5%;
     font-size: 1.5em;
     font-weight:bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:5px;
+    margin:10px;
 }
-
 header h1>a{
     background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02));
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0.5px 0.5px 4px var(--text-shadow);
-    
-}
-menu{
-    display: ;
-}
-nav{
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-content: center;
-    row-gap: 5px;
-    column-gap: 15px;
     
 }
 
@@ -74,7 +55,6 @@ nav a{
     font-weight: bold;
     text-shadow: 0.5px 0.5px 4px var(--text-shadow);
 }
-
 nav a:hover{
     text-decoration: underline;
 }
@@ -92,17 +72,10 @@ nav a:hover{
 }
 
 #next-contat:hover{
-    background-color: var(--background-inverso);
-    color: var(--texto-inverso);
-    text-shadow:0.5px 0.5px 1px var(--fundo);
-    box-shadow: var(--text-shadow) 1.95px 1.95px 2.6px;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 1200px) {
-
-    #desktop-box{
-        display: none;
-    }
+background-color: var(--background-inverso);
+color: var(--texto-inverso);
+text-shadow:0.5px 0.5px 1px var(--fundo);
+box-shadow: var(--text-shadow) 1.95px 1.95px 2.6px;
+text-decoration: none;
 }
 
