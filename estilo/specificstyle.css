@@ -1,34 +1,55 @@
+
+/*Tela pequena*/
 @media screen and (max-width:564px) {
     #mobile-first {
-    flex-direction: column;
-    display: flex;
-    row-gap:10px;
-    align-items: center;
-    margin-top: 10px;
-}
-span{
-    color: var(--texto-gradient-01);
-    text-decoration: none;
-    font-weight: bold;
-    text-shadow: 0.5px 0.5px 4px var(--text-shadow);
-    margin-right: 10px;
-}
-nav.menu-drop {
-    display: none;
-}
-#mobile-first:hover nav.menu-drop {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content:center;
-    flex-flow: row wrap;
-    row-gap: 5px;
-    align-content: center;
-    column-gap: 15px;
-}
+        flex-direction: column;
+        display: flex;
+        row-gap:10px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    span{
+        color: var(--texto-gradient-01);
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0.5px 0.5px 4px var(--text-shadow);
+        margin-right: 10px;
+    }
+    nav.menu-drop {
+        display: none;
+    }
+    #mobile-first:hover nav.menu-drop {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content:center;
+        flex-flow: row wrap;
+        row-gap: 5px;
+        align-content: center;
+        column-gap: 15px;
+    }
+
+    /*main*/
+
+    .icons-text-highlights{
+        width: 60%;
+    }
+    #presentation h1{
+        font-size: 1em;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    span.text-contrast{
+       font-size: 1.9em; 
+       width: 100%;
+       display: block;
+    }
 }
 
+/*media*/
 @media screen and (min-width:565px) {
 
     header{
@@ -59,5 +80,29 @@ nav.menu-drop {
         justify-content: flex-end;
         gap: 15px;
         margin-right: 15px;
+    }
+
+    /*main*/
+
+    .icons-text-highlights{
+        width: 200px;
+    }
+    #presentation h1{
+        width: 60%;
+        font-size:1.3em;
+        display: block;
+        margin: auto;
+    }
+
+    
+}
+
+@media screen and (min-width:800px) {
+
+    /*MAIN*/
+    #presentation h1{
+        width: 70%;
+        font-size: 1.6em;
+        
     }
 }

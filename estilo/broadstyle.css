@@ -9,16 +9,16 @@
 :root{
     --fundo:#dddddd;
     --backround-header:#8989898a; /*+++cor de fundo*/
-    --background-main:#fffdfd25;
-    --texto-principal:#2e2c2c;
+    --background-main:#fffdfd09;
+    --texto-principal:#3b3b3b;
     --texto-inverso:#ceccccf1;
     --texto-gradient-01:#353ff8fe; /*cor de backround de alguns elementos*/
     --text-gradient-02:#60acf8; /*cor de backround de alguns elementos*/
     --text-gradient-03:#60dcf8;
-    --text-shadow:#0000005e;
+    --text-shadow:#0000004f;
     --backround-text:#3d8dde;
     --background-inverso:#3835f8fe;
-    --icons-text-highlights:#1f568d44;
+    --icons-text-highlights:#297ed244;
     
 }  
 
@@ -87,15 +87,18 @@ main{
     
 }
 section{
-    margin-top: 10px;
     background-color: var(--background-main);
     border-radius: 8px;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
 }
 #presentation{
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.118) 0px 2px 8px 0px;
 }
 .icons-text-highlights{
     background-color: var(--icons-text-highlights);
@@ -105,23 +108,96 @@ section{
     padding: 5px;
     border-radius: 15px;
     text-align: center;
-    width: 50%;
     display: block;
     margin: auto;
 }
 
-span{
-    display: block;
+/*MAIN*/
+
+span.text-contrast{
     background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02), var(--text-gradient-02), var(--text-gradient-03));
     background-clip: text;
     color: transparent;
     text-shadow: 0.5px 0.5px 2px var(--text-shadow);
-    font-size: 1.8em;
 }
 
 #presentation h1{
-    
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.8em;
+    margin-top:10px;
+    
+}
+
+#presentation h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    color: var(--texto-principal);
+    margin-bottom: 10px;
+}
+
+#presentation>p{
+    text-align: center;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 0.9em;
+    color: var(--texto-principal);
+    margin-bottom: 30px;
+}
+.access-content{
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9em;
+}
+.access-content>.projects-page{
+    color: var(--texto-inverso);
+    background-color: var(--backround-text);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+.access-content>.contact{
+    color: var(--texto-principal);
+    background-color: var(--fundo);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.social-media img{
+    width: 20px;
+}
+
+#animation{
+    display: flex;
+    justify-content: center;
+}
+#animation>img{
+    animation: flutuar 1s ease-in-out infinite;
+}
+/*Ativação da animação*/
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* sobe levemente */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
