@@ -27,6 +27,8 @@ body{
     height: 100vh;
     width: 100vw;
 }
+/*Header*/
+
 header{
     background-image:linear-gradient(to top, var(--backround-header), var(--fundo));
     height: 100px;
@@ -50,6 +52,8 @@ header h1>a{
     text-shadow: 0.5px 0.5px 4px var(--text-shadow);
     
 }
+
+/*menu de navegação*/
 
 nav a{
     color: var(--texto-gradient-01);
@@ -81,15 +85,20 @@ nav a:hover{
     text-decoration: none;
 }
 
+
+/*MAIN*/
+
 main{
     display: grid;
     grid-template-columns:auto 90vw auto;
+    grid-template-rows: repeat(6,auto);
     
 }
+/*Pagina inicial*/
 section{
     background-color: var(--background-main);
     border-radius: 8px;
-    max-width: 700px;
+    max-width: 750px;
     display: block;
     margin: auto;
     margin-top: 50px;
@@ -112,7 +121,7 @@ section{
     margin: auto;
 }
 
-/*MAIN*/
+
 
 span.text-contrast{
     background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02), var(--text-gradient-02), var(--text-gradient-03));
@@ -200,4 +209,54 @@ span.text-contrast{
   100% {
     transform: translateY(0);
   }
+}
+
+/*Sobre mim*/
+
+section#about-me{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.118) 0px 2px 8px 0px;
+}
+
+section#about-me >h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:10px;
+}
+
+section#about-me > h1 span{
+    position: relative
+}
+
+section#about-me > h1 span::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: -6px;
+  width: 40%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--texto-gradient-01), var(--text-gradient-03));
+  border-radius: 2px;
+  animation: underline 1s ease forwards;
+}
+
+@keyframes underline {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+div.line-image-text{
+    display: flex;
+    gap: 20px;
+}
+
+
+div.line-image-text > .img-box img{
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
