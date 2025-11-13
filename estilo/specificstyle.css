@@ -75,7 +75,7 @@
         display: block;
         margin: auto;
         margin-top: 20px;
-        aspect-ratio: 1/2;
+        aspect-ratio: 1/1;
         object-fit: cover;
         overflow:hidden;
     }
@@ -118,13 +118,18 @@
     /*main*/
 
     .icons-text-highlights{
-        width: 200px;
+        width:200px;
     }
+
     #presentation h1{
         width: 60%;
         font-size:1.3em;
         display: block;
         margin: auto;
+    }
+
+    #presentation>p#unico{
+       margin: 0px 60px;
     }
 
     /*section sobre mim*/
@@ -141,7 +146,7 @@
         display: block;
         margin: auto;
         margin-top: 20px;
-        aspect-ratio: 1/2;
+        aspect-ratio: 1/1;
         object-fit: cover;
         overflow:hidden;
     }
@@ -158,22 +163,26 @@
         
     }
 
+    #presentation p#unico{
+       margin: 0px 100px; 
+    }
+
     /*Section sobre mim*/
      div.line-image-text{
         flex-flow:row nowrap;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .img-box{
-        width: 45%;
+        width: 60%;
     }
 
     div.line-image-text > .img-box img{
         width: 90%;
-        height:auto;
+        height:430px;
         margin-left: 10px;
-        aspect-ratio: 1/2;
+        aspect-ratio: 1/1;
         object-fit: cover;
         overflow:hidden;
     }
@@ -181,5 +190,6 @@
     div.text-box-set{
         width: 55%;
         height: 100%;
+        margin-top: 50px;
     }
 }

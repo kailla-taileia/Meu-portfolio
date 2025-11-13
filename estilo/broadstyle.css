@@ -19,6 +19,7 @@
     --backround-text:#3d8dde;
     --background-inverso:#3835f8fe;
     --icons-text-highlights:#297ed244;
+    --icon-about-me:#13375b98;
     
 }  
 
@@ -98,7 +99,7 @@ main{
 section{
     background-color: var(--background-main);
     border-radius: 8px;
-    max-width: 750px;
+    max-width: 800px;
     display: block;
     margin: auto;
     margin-top: 50px;
@@ -113,6 +114,7 @@ section{
     background-color: var(--icons-text-highlights);
     color: var(--background-inverso);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     font-size: 0.7em;
     padding: 5px;
     border-radius: 15px;
@@ -218,7 +220,7 @@ section#about-me{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:3;
-    padding: 10px;
+    padding: 30px 10px;
     box-shadow: rgba(99, 99, 99, 0.118) 0px 2px 8px 0px;
 }
 
@@ -251,12 +253,56 @@ section#about-me > h1 span::after {
 
 div.line-image-text{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
-
+/*Imagem*/
 div.line-image-text > .img-box img{
     margin-top: 20px;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*caixa com inf*/
+div.set-of-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.box-child{
+    width: 33.2%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dfdfdf;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.box-child >.symbols-box{
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--icons-text-highlights);
+    color: var(--icon-about-me);
+}
+
+.box-child>h3{
+    color: var(--texto-principal);
+    font-size: 0.9em;
+    text-align: center;
+    margin: 8px 0px;
+    font-weight: 700;
+}
+
+.box-child>p{
+    color: var(--texto-principal);
+    text-align: center;
+    font-size: 0.85em;
 }
