@@ -11,7 +11,9 @@
     --fundo:#edf3f6;
     --backround-header:#d5eaf5; /*+++cor de fundo*/
     --background-main:#fffdfd09;
+
     --texto-principal:#494949f5;
+    --texto-secundario:#636363f5;
     --texto-inverso:#efeaeaf1;
 
     --texto-gradient-01:#254da9;
@@ -171,13 +173,14 @@ span#text-contrast{
     margin-top: 10px;
 }
 
-#presentation>p.unico{
+#presentation>p#unico{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
     font-size: 0.9em;
     color: var(--texto-principal);
     margin-bottom: 30px;
+    margin: auto;
 
 }
 .access-content{

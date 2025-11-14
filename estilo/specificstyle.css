@@ -65,8 +65,6 @@
 
     #presentation > p#unico{
         width: 70%;
-        text-align: center;
-        margin: auto;
     }
 
     /*section sobre mim*/
@@ -107,13 +105,13 @@
     /*HEADER*/
 
     header>h1{
-    width: 12%;
+    width: 5%;
     font-size: 1.7em;
     }
     /*NAVEGAÇÃO*/
 
     #content-menu{
-        width: 88%;
+        width: 95%;
     }
 
     span.menu{
@@ -145,10 +143,7 @@
     }
 
     #presentation>p#unico{
-       margin: 0px 60px;
        width: 70%;
-       text-align: center;
-       margin: auto;
     }
 
     /*section sobre mim*/
@@ -202,9 +197,7 @@
     }
 
     #presentation p#unico{
-       margin: 0px 100px; 
        width: 60%;
-       margin: auto;
     }
 
     /*Section sobre mim*/
