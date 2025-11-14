@@ -1,66 +1,85 @@
 
 /*Tela pequena*/
 @media screen and (max-width:564px) {
-    #mobile-first {
-        flex-direction: column;
+
+    /*HEADER*/
+
+    header>h1{
+    width: 5%;
+    font-size: 1.5em;
+    margin:10px;
+    }
+
+
+    /*MENU DE NAVEGAÇÃO*/
+    #content-menu {
         display: flex;
-        row-gap:10px;
+        flex-direction: column;
         align-items: center;
+        align-content: center;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap:10px;
         margin-top: 10px;
     }
-    span{
-        color: var(--texto-gradient-01);
-        text-decoration: none;
-        font-weight: bold;
-        text-shadow: 0.5px 0.5px 4px var(--text-shadow);
-        margin-right: 10px;
-    }
+
     nav.menu-drop {
         display: none;
     }
-    #mobile-first:hover nav.menu-drop {
+
+    #content-menu:hover nav.menu-drop {
         width: 95%;
+        height: 100%;
+
         display: flex;
         align-items: center;
-        height: 100%;
         justify-content:center;
         flex-flow: row wrap;
-        row-gap: 5px;
         align-content: center;
+
+        row-gap: 5px;
         column-gap: 15px;
+        
+        
     }
 
     /*main*/
 
-    .icons-text-highlights{
-        width: 60%;
+    #presentation > p.icons-text-highlights{
+        width: 50%;
     }
+
     #presentation h1{
-        font-size: 1em;
+        font-size: 1.2em;
         display: block;
         margin: auto;
         width: 100%;
     }
 
-    span.text-contrast{
+    span#text-contrast{
        font-size: 1.9em; 
-       width: 100%;
+       width: 90%;
        display: block;
+       margin: auto;
+    }
+
+    #presentation > p#unico{
+        width: 70%;
+        text-align: center;
+        margin: auto;
     }
 
     /*section sobre mim*/
 
     section#about-me >h1{
-        font-size: 1.5em;
+        font-size: 1.2em;
         display: block;
         margin: auto;
         width: 100%;
     }
 
-    section#about-me >h1> span.text-contrast{
-       font-size: 1em; 
-       width: 100%;
-       display: inline;
+   span#text-contrast-about{
+       font-size: 1.2em; 
     }
     
     div.line-image-text{
@@ -85,23 +104,20 @@
 /*media*/
 @media screen and (min-width:565px) {
 
-    header{
-        height: 30px;
-    }
+    /*HEADER*/
 
     header>h1{
-    width: 15%;
-    font-size: 1.8em;
+    width: 12%;
+    font-size: 1.7em;
+    }
+    /*NAVEGAÇÃO*/
+
+    #content-menu{
+        width: 88%;
     }
 
     span.menu{
         display: none;
-    }
-
-    #mobile-first{
-        width: 85%;
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     nav.menu-drop{
@@ -122,17 +138,24 @@
     }
 
     #presentation h1{
-        width: 60%;
-        font-size:1.3em;
+        width: 100%;
+        font-size:1.7em;
         display: block;
         margin: auto;
     }
 
     #presentation>p#unico{
        margin: 0px 60px;
+       width: 70%;
+       text-align: center;
+       margin: auto;
     }
 
     /*section sobre mim*/
+
+    section#about-me >h1{
+        font-size: 1.8em;
+    }
 
      div.line-image-text{
         flex-flow:column nowrap;
@@ -153,18 +176,35 @@
 
     
 }
-
+/*TELAS MAIORES*/
 @media screen and (min-width:800px) {
 
+    /*HEADER*/
+    header>h1{
+    width: 18%;
+    font-size: 1.9em;
+    }
+
+    #content-menu{
+        width: 82%;
+    }
+
     /*MAIN*/
+
+    #presentation > p.icons-text-highlights{
+        width: 25%;
+    }
+
     #presentation h1{
-        width: 70%;
-        font-size: 1.6em;
+        width: 80%;
+        font-size: 2.1em;
         
     }
 
     #presentation p#unico{
        margin: 0px 100px; 
+       width: 60%;
+       margin: auto;
     }
 
     /*Section sobre mim*/
@@ -175,7 +215,7 @@
     }
 
     .img-box{
-        width: 60%;
+        width: 50%;
     }
 
     div.line-image-text > .img-box img{
@@ -188,8 +228,7 @@
     }
 
     div.text-box-set{
-        width: 55%;
-        height: 100%;
-        margin-top: 50px;
+        width: 50%;
     }
+
 }

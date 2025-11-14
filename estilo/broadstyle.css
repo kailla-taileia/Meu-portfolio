@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
     margin: 0;
@@ -7,19 +8,21 @@
 }
 
 :root{
-    --fundo:#dddddd;
-    --backround-header:#8989898a; /*+++cor de fundo*/
+    --fundo:#edf3f6;
+    --backround-header:#d5eaf5; /*+++cor de fundo*/
     --background-main:#fffdfd09;
-    --texto-principal:#3b3b3b;
-    --texto-inverso:#ceccccf1;
-    --texto-gradient-01:#353ff8fe; /*cor de backround de alguns elementos*/
-    --text-gradient-02:#60acf8; /*cor de backround de alguns elementos*/
-    --text-gradient-03:#60dcf8;
+    --texto-principal:#494949f5;
+    --texto-inverso:#efeaeaf1;
+
+    --texto-gradient-01:#254da9;
+    --text-gradient-02:#2a64b0; /*cor de backround de alguns elementos*/
+    --text-gradient-03:#28a5cf;
+    --text-gradient-04:#27c6de;
+
     --text-shadow:#0000004f;
-    --backround-text:#3d8dde;
+    --backround-text:#0c4da6;
     --background-inverso:#3835f8fe;
-    --icons-text-highlights:#297ed244;
-    --icon-about-me:#13375b98;
+    --background-icons-text-highlights:#297ed244;
     
 }  
 
@@ -32,35 +35,49 @@ body{
 
 header{
     background-image:linear-gradient(to top, var(--backround-header), var(--fundo));
+
     height: 100px;
     width: 100%;
+
     display: flex;
     flex-wrap: nowrap;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
+    gap: 10px;
+
+    padding:0px 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 header>h1{
-    width: 5%;
-    font-size: 1.5em;
     font-weight:bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:10px;
 }
 header h1>a{
-    background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02));
+    background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02), var(--text-gradient-03), var(--text-gradient-04));
     background-clip: text;
     color: transparent;
-    text-shadow: 0.5px 0.5px 4px var(--text-shadow);
     
+}
+
+span{
+    color: var(--texto-gradient-01);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 4px var(--text-shadow);
+    margin-right: 10px;
 }
 
 /*menu de navegação*/
 
 nav a{
-    color: var(--texto-gradient-01);
+    color: var(--texto-principal);
     text-decoration: none;
-    font-weight: bold;
-    text-shadow: 0.5px 0.5px 4px var(--text-shadow);
+    font-weight: normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0.5px 0.5px 2px var(--text-shadow);
 }
 nav a:hover{
     text-decoration: underline;
@@ -110,51 +127,58 @@ section{
     padding: 10px;
     box-shadow: rgba(99, 99, 99, 0.118) 0px 2px 8px 0px;
 }
-.icons-text-highlights{
-    background-color: var(--icons-text-highlights);
-    color: var(--background-inverso);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    font-size: 0.7em;
-    padding: 5px;
-    border-radius: 15px;
+#presentation>p.icons-text-highlights{
+    background-color: var(--background-icons-text-highlights);
+    color: var(--backround-text);
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 0.8em;
+    font-weight: normal;
     text-align: center;
+
+    border-radius: 15px;
+    
     display: block;
+
     margin: auto;
+    padding: 5px;
 }
 
+#presentation h1{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top:10px;
+    
+}
 
-
-span.text-contrast{
-    background-image: linear-gradient(to right, var(--texto-gradient-01),var(--text-gradient-02), var(--text-gradient-02), var(--text-gradient-03));
+span#text-contrast{
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-03), var(--text-gradient-04));
     background-clip: text;
     color: transparent;
     text-shadow: 0.5px 0.5px 2px var(--text-shadow);
 }
 
-#presentation h1{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top:10px;
-    
-}
+
 
 #presentation h2{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 1em;
-    color: var(--texto-principal);
+    color: #474747;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#presentation>p{
+#presentation>p.unico{
     text-align: center;
-    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
     font-size: 0.9em;
     color: var(--texto-principal);
     margin-bottom: 30px;
+
 }
 .access-content{
     display: flex;
@@ -163,6 +187,7 @@ span.text-contrast{
     margin-bottom: 30px;
     font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.9em;
+    margin: 30px 0px;
 }
 .access-content>.projects-page{
     color: var(--texto-inverso);
@@ -226,22 +251,25 @@ section#about-me{
 
 section#about-me >h1{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top:10px;
 }
 
 section#about-me > h1 span{
-    position: relative
+    position: relative;
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-03), var(--text-gradient-04) );
+    background-clip: text;
+    color: transparent;
 }
 
 section#about-me > h1 span::after {
   content: "";
   position: absolute;
-  left: -5px;
+  left: -50px;
   bottom: -6px;
   width: 40%;
   height: 3px;
-  background: linear-gradient(90deg, var(--texto-gradient-01), var(--text-gradient-03));
+  background: linear-gradient(90deg, var(--texto-gradient-01), var(--text-gradient-04));
   border-radius: 2px;
   animation: underline 1s ease forwards;
 }
@@ -264,12 +292,20 @@ div.line-image-text > .img-box img{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+div.text-box-set>p{
+    text-align: start;
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
+    color: var(--texto-principal);
+}
+
 /*caixa com inf*/
 div.set-of-boxes{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     margin-top: 25px;
 }
 
@@ -279,7 +315,7 @@ div.set-of-boxes{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #dfdfdf;
+    background-color: var(--fundo);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 5px;
     padding: 8px;
@@ -289,8 +325,8 @@ div.set-of-boxes{
     margin-top: 10px;
     padding: 8px;
     border-radius: 8px;
-    background-color: var(--icons-text-highlights);
-    color: var(--icon-about-me);
+    background-color: var(--background-icons-text-highlights);
+    color: var(--backround-text);
 }
 
 .box-child>h3{
