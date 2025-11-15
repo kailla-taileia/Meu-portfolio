@@ -70,7 +70,7 @@
     /*section sobre mim*/
 
     section#about-me >h1{
-        font-size: 1.2em;
+        font-size: 1.4em;
         display: block;
         margin: auto;
         width: 100%;
@@ -84,7 +84,7 @@
         flex-flow:column nowrap;
         align-items: center;
     }
-
+    /*imagem*/
     div.line-image-text > .img-box img{
         width: 60%;
         max-width: 565px;
@@ -97,12 +97,21 @@
         overflow:hidden;
     }
 
+    /*texto*/
+    div.text-box-set>p{
+        padding: 0px 20px;
+    }
+
 }
 
 /*media*/
 @media screen and (min-width:565px) {
 
     /*HEADER*/
+
+    header{
+        padding: 0px 22px;
+    }
 
     header>h1{
     width: 5%;
@@ -125,7 +134,7 @@
         align-content: center;
         align-items: center;
         justify-content: flex-end;
-        gap: 15px;
+        gap: 10px;
         margin-right: 15px;
     }
 
@@ -137,13 +146,13 @@
 
     #presentation h1{
         width: 100%;
-        font-size:1.7em;
+        font-size:2.3em;
         display: block;
         margin: auto;
     }
 
     #presentation>p#unico{
-       width: 70%;
+       width: 55%;
     }
 
     /*section sobre mim*/
@@ -159,11 +168,10 @@
 
     div.line-image-text > .img-box img{
         width: 40%;
-        max-width: 565px;
-        height:auto;
+        max-width: auto;
+        height:430;
         display: block;
         margin: auto;
-        margin-top: 20px;
         aspect-ratio: 1/1;
         object-fit: cover;
         overflow:hidden;
@@ -175,13 +183,20 @@
 @media screen and (min-width:800px) {
 
     /*HEADER*/
+    header{
+        padding: 0px 70px;
+    }
     header>h1{
     width: 18%;
     font-size: 1.9em;
     }
-
+    /*conteudo de navegação*/
     #content-menu{
         width: 82%;
+    }
+
+    nav.menu-drop{
+        gap: 20px;
     }
 
     /*MAIN*/
@@ -191,8 +206,8 @@
     }
 
     #presentation h1{
-        width: 80%;
-        font-size: 2.1em;
+        width: 90%;
+        font-size: 3em;
         
     }
 
@@ -201,6 +216,9 @@
     }
 
     /*Section sobre mim*/
+    section#about-me >h1{
+        font-size: 2.2em;
+    }
      div.line-image-text{
         flex-flow:row nowrap;
         align-items: center;
@@ -213,7 +231,7 @@
 
     div.line-image-text > .img-box img{
         width: 90%;
-        height:430px;
+        height:440px;
         margin-left: 10px;
         aspect-ratio: 1/1;
         object-fit: cover;

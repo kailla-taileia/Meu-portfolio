@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +10,7 @@
 
 :root{
     --fundo:#edf3f6;
-    --backround-header:#d5eaf5; /*+++cor de fundo*/
+    --backround-header:#edf3f6d9; /*+++cor de fundo*/
     --background-main:#fffdfd09;
 
     --texto-principal:#494949f5;
@@ -24,13 +25,13 @@
     --text-shadow:#0000004f;
     --backround-text:#0c4da6;
     --background-inverso:#3835f8fe;
-    --background-icons-text-highlights:#297ed244;
+    --background-icons-text-highlights:#3d87d22c;
     
 }  
 
 body{
     background-color:var(--fundo);
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 /*Header*/
@@ -47,11 +48,10 @@ header{
     align-items: center;
     gap: 10px;
 
-    padding:0px 10px;
 
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
 }
 header>h1{
     font-weight:bolder;
@@ -118,7 +118,7 @@ main{
 section{
     background-color: var(--background-main);
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 950px;
     display: block;
     margin: auto;
     margin-top: 50px;
@@ -127,7 +127,6 @@ section{
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px;
-    box-shadow: rgba(99, 99, 99, 0.118) 0px 2px 8px 0px;
 }
 
 #presentation>p.icons-text-highlights{
@@ -169,15 +168,15 @@ span#text-contrast{
     font-weight: normal;
     font-size: 1em;
     color: #474747;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 #presentation>p#unico{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: var(--texto-principal);
     margin-bottom: 30px;
     margin: auto;
@@ -186,16 +185,17 @@ span#text-contrast{
 .access-content{
     display: flex;
     justify-content:center;
+    align-items: center;
     gap: 40px;
     margin-bottom: 30px;
-    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 0.9em;
     margin: 30px 0px;
 }
 .access-content>.projects-page{
     color: var(--texto-inverso);
     background-color: var(--backround-text);
-    padding: 5px 10px;
+    padding: 8px 15px;
     border-radius: 8px;
     font-weight: bold;
 
@@ -205,7 +205,7 @@ span#text-contrast{
     color: var(--texto-principal);
     background-color: var(--fundo);
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
@@ -234,7 +234,7 @@ span#text-contrast{
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px); /* sobe levemente */
+    transform: translateY(-8px);
   }
   100% {
     transform: translateY(0);
@@ -254,8 +254,9 @@ section#about-me{
 
 section#about-me >h1{
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin-top:10px;
+    margin-bottom: 40px;
 }
 
 section#about-me > h1 span{
@@ -265,11 +266,13 @@ section#about-me > h1 span{
     color: transparent;
 }
 
+/*Linha abaixo*/
+
 section#about-me > h1 span::after {
   content: "";
   position: absolute;
   left: -50px;
-  bottom: -6px;
+  bottom: -15px;
   width: 40%;
   height: 3px;
   background: linear-gradient(90deg, var(--texto-gradient-01), var(--text-gradient-04));
@@ -285,22 +288,31 @@ section#about-me > h1 span::after {
 div.line-image-text{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 /*Imagem*/
 div.line-image-text > .img-box img{
-    margin-top: 20px;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+/*texto*/
+
 div.text-box-set>p{
     text-align: start;
-    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
-    font-weight: lighter;
+    line-height: 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+
+    margin: 20px auto;
 
     color: var(--texto-principal);
+}
+
+div.text-box-set>p#p-ligth{
+    font-weight: normal;
 }
 
 /*caixa com inf*/
@@ -309,7 +321,7 @@ div.set-of-boxes{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .box-child{
@@ -325,11 +337,12 @@ div.set-of-boxes{
 }
 
 .box-child >.symbols-box{
+    font-size: 22px;
     margin-top: 10px;
     padding: 8px;
     border-radius: 8px;
     background-color: var(--background-icons-text-highlights);
-    color: var(--backround-text);
+    color: var(--background-inverso);
 }
 
 .box-child>h3{
