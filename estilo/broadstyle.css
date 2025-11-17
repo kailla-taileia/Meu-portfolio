@@ -10,12 +10,15 @@
 
 :root{
     --fundo:#edf3f6;
-    --backround-header:#edf3f6d9; /*+++cor de fundo*/
+    --backround-header:transparent; /*+++cor de fundo*/
     --background-main:#fffdfd09;
+    --background-section-my-skills:#f9fbfa;
+    --skill-meter:#d7d7d7;
 
     --texto-principal:#494949f5;
     --texto-secundario:#636363f5;
     --texto-inverso:#efeaeaf1;
+    --porcentagem:#848484eb;;
 
     --texto-gradient-01:#254da9;
     --text-gradient-02:#2a64b0; /*cor de backround de alguns elementos*/
@@ -38,6 +41,7 @@ body{
 
 header{
     background-image:linear-gradient(to top, var(--backround-header), var(--fundo));
+    backdrop-filter: blur(20px);
 
     width: 100%;
 
@@ -110,7 +114,7 @@ nav a:hover{
 
 main{
     display: grid;
-    grid-template-columns:auto 90vw auto;
+    grid-template-columns:auto 100vw auto;
     grid-template-rows: repeat(6,auto);
     
 }
@@ -249,7 +253,7 @@ section#about-me{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:3;
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
 
 section#about-me >h1{
@@ -328,7 +332,7 @@ div.set-of-boxes{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 40px;
+    margin: 40px auto 0px auto
 }
 
 .box-child{
@@ -368,12 +372,31 @@ div.set-of-boxes{
 
 /*Minhas habilidade*/
 
+
 section#my-skills{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end:4;
-    padding: 30px 10px;
+    padding: 40px 10px; 
+    position: relative; /* necessário para usar ::before */
+    z-index: 1; /* mantém o conteúdo visível */
+    margin-bottom: 40px;
+}
+
+
+/* Background full-width */
+section#my-skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 49%;
+
+    width: 97.5vw;
+    height: 100%;
+    background: var(--background-section-my-skills);
+    transform: translateX(-50%); /* centraliza */
+    z-index: -1; /* fica atrás do conteúdo */
 }
 
 section#my-skills >h1{
@@ -415,9 +438,95 @@ section#my-skills > h1 span#text-contrast-skills::after {
 
 #my-skills > p{
     font-family: "Inter", sans-serif;
-    font-size: 0.95em;
+    font-size: 0.9em;
     color: var(--texto-secundario);
     text-align: center;
-    width: 90%;
-    margin: auto;
+    margin: 10px auto 50px auto;
+}
+
+.skill-set{
+    margin-bottom: 30px;
+}
+
+.skill-set h2{
+    font-size: 1.2em;
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    color: var(--texto-gradient-01);
+    margin: 15px 0px;
+}
+
+.content-skills{
+    margin-bottom: 15px;
+}
+
+.skill-information{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    
+}
+
+.skill-information h3{
+    font-size: 0.75em;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif; 
+    font-weight:bold;
+    color: var(--texto-principal);
+}
+
+.skill-information span{
+    font-size: 0.75em;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif; 
+    font-weight:normal;
+    color: var(--porcentagem);
+    text-shadow: none;
+}
+
+.skill-meter{
+    width: 100%;
+    height: 8px;
+    background-color: var(--skill-meter);
+    border-radius: 50px;
+}
+
+.skill-percentage{
+    height: 100%;
+    border-radius: 50px;
+    background-image: linear-gradient( to right, var(--texto-gradient-01), var(--text-gradient-04));
+}
+
+/*MEUS PROJETOS*/
+section#my-projects{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end:5;
+}
+
+#box-projects{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    height: 250px;
+    column-gap: 20px;
+}
+
+.exemple-box{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    
+    
+}
+
+div#img-project-01{
+    height: 50%;
+    background-image: url(../imagens/projeto-loggin.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+div.text-project{
+    height: 50%;
 }

@@ -74,6 +74,11 @@
 
     /*section sobre mim*/
 
+    section#my-skills{
+        width: 90%;
+    }
+
+
     section#about-me >h1{
         font-size: 1.4em;
         width: 100%;
@@ -100,19 +105,27 @@
         overflow:hidden;
     }
 
-    /*texto*/
-    div.text-box-set>p{
-        padding: 0px 20px;
+     div.text-box-set>p{
+        width: 70%;
     }
 
-}
+    /*caixa com inf*/
+    div.set-of-boxes{
+        width: 80%;
 
-/*SEÇÃO MINHAS HABILIDADES*/
+    }
+
+   /*SEÇÃO MINHAS HABILIDADES*/
 
     section#my-skills >h1{
-        font-size: 1.4em;
+        font-size: 1.5em;
+    }
+
+     #my-skills >p{
         width: 100%;
     }
+
+}    
 
 /*media*/
 @media screen and (min-width:565px) {
@@ -168,9 +181,15 @@
 
     /*section sobre mim*/
 
+    section#my-skills{
+        width: 80%;
+    }
+
     section#about-me >h1{
         font-size: 1.8em;
     }
+
+   
 
      div.line-image-text{
         flex-flow:column nowrap;
@@ -188,7 +207,15 @@
         overflow:hidden;
     }
 
+    div.text-box-set>p{
+        width: 60%;
+    }
 
+    /*caixa com inf*/
+    div.set-of-boxes{
+        width: 60%;
+
+    }
     /*SEÇÃO MINHAS HABILIDADES*/
 
     section#my-skills >h1{
@@ -197,6 +224,7 @@
 
     
 }
+
 /*TELAS MAIORES*/
 @media screen and (min-width:800px) {
 
@@ -260,10 +288,27 @@
         width: 50%;
     }
 
+     div.text-box-set>p{
+        width: 100%;
+    }
+
+    /*caixa com inf*/
+    div.set-of-boxes{
+        width: 100%;
+    }
+
     /*SEÇÃO MINHAS HABILIDADES*/
+
+    section#my-skills{
+        width: 50%;
+    }
 
     section#my-skills >h1{
         font-size: 2.2em;
+    }
+
+    #my-skills >p{
+        width: 70%;
     }
 
 }
