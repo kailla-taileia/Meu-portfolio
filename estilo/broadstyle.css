@@ -15,7 +15,7 @@
     --background-section-my-skills:#f9fbfa;
     --skill-meter:#d7d7d7;
 
-    --texto-principal:#494949f5;
+    --texto-principal:#3b3b3bf5;
     --texto-secundario:#636363f5;
     --texto-inverso:#efeaeaf1;
     --porcentagem:#848484eb;;
@@ -553,6 +553,7 @@ section#my-projects > h1 span#text-contrast-projects::after {
     color: var(--texto-secundario);
     text-align: center;
     margin: 8px auto 50px auto;
+    width: 90%;
 }
 
 #box-projects{
@@ -624,4 +625,209 @@ div.type-language > p {
     border-radius: 15px;
     padding: 3px 15px;
 
+}
+
+div.buttom-acess{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top:15px;
+
+}
+
+div.buttom-acess>span>a{
+    background-color: var(--background-icons-text-highlights);
+    padding: 8px 20px;
+    color: var(--backround-text);
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+div.buttom-acess>span>a:hover{
+    background-color: var(--backround-text);
+    color: var(--texto-inverso);
+}
+
+
+
+
+
+/*ENTRE EM CONTATO*/
+section#get-in-touch{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end:6;
+    padding: 40px 0px;
+    max-width: 900px;
+
+    position: relative; /* necessário para usar ::before */
+    z-index: 1; /* mantém o conteúdo visível */
+    margin-bottom: 40px;
+}
+
+
+/* Background full-width */
+section#get-in-touch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 49%;
+
+    width: 97.5vw;
+    height: 100%;
+    background: var(--background-section-my-skills);
+    transform: translateX(-50%); /* centraliza */
+    z-index: -1; /* fica atrás do conteúdo */
+}
+
+
+
+section#get-in-touch >h1{
+    display: block;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px auto 30px auto;
+    width: 100%;
+
+}
+
+section#get-in-touch > h1 span{
+    position: relative;
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-03), var(--text-gradient-04) );
+    background-clip: text;
+    color: transparent;
+}
+
+/*Linha abaixo*/
+
+section#get-in-touch > h1 span#text-contrast-contact::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  bottom: -10px;
+  width: 40%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--texto-gradient-01), var(--text-gradient-04));
+  border-radius: 2px;
+  animation: underlineContact 1s ease forwards;
+}
+
+@keyframes underlineContact {
+  from { width: 0; }
+  to { width: 40%; }
+}
+
+section#get-in-touch > p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.9em;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin: 8px auto 50px auto;
+    width: 90%;
+    line-height: 21px;
+}
+
+div#content-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+div#inf-contact{
+    width: 50%;
+}
+
+div#inf-contact>h3{
+    font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div#e-mail{
+    display: flex;
+    margin: 20px 0px 20px 0px;
+    align-items: center;
+}
+
+div#e-mail>span{
+    background-color: var(--background-icons-text-highlights);
+    padding: 10px;
+    color: var(--texto-gradient-01);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+div.contact-item-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+div.contact-item-text>h4{
+    color: var(--texto-principal);
+    font-size: 0.9em;
+}
+
+div.contact-item-text>p>a{
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-size: 0.95em;
+
+}
+
+div#telephone{
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    align-items: center;
+}
+
+div#telephone>span{
+    background-color: var(--background-icons-text-highlights);
+    padding: 10px;
+    color: var(--texto-gradient-01);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+div#location{
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    align-items: center;
+}
+
+div#location>span{
+    background-color: var(--background-icons-text-highlights);
+    padding: 10px;
+    color: var(--texto-gradient-01);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+div#availability-card{
+     margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--texto-gradient-01), var(--text-gradient-04));
+    color: #fff;
+    border-radius: 12px;
+}
+
+div#form{
+    width: 50%;
+}
+
+
+
+div.form-row{
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.95rem;
 }
