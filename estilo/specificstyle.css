@@ -125,6 +125,10 @@
         width: 100%;
     }
 
+    .skill-set{
+         width: 80%;
+    }
+
     /*SEÇÃO MEUS PROJETOS*/
 
     #box-projects{
@@ -237,6 +241,10 @@
         font-size: 1.8em;
     }
 
+     .skill-set{
+         width: 80%;
+    }
+
     /*SEÇÃO MEUS PROJETOS*/
 
      #box-projects{
@@ -252,8 +260,34 @@
         width: 50%;
     }
 
+    /*SEÇÃO DE CONTATO*/
+
+    section#get-in-touch > p{
+        width: 80%;
+    }
+
     
+
+    div#content-contact{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    div#inf-contact{
+        width: 100%;
+       
+        
+    }
+
+    div#form{
+        width: 70%;
+    }
+
 }
+    
+
 
 /*TELAS MAIORES*/
 @media screen and (min-width:800px) {
@@ -341,6 +375,10 @@
         width: 70%;
     }
 
+    .skill-set{
+         width: 60%;
+    }
+
 
     /*SEÇÃO MEUS PROJETOS*/
 
@@ -360,6 +398,28 @@
     .example-box{
         height:100%;
         width: 33.3%;
+    }
+
+    /*SEÇÃO CONTATO*/
+
+    section#get-in-touch > p{
+        width: 90%;
+    }
+
+    div#inf-contact{
+        width: 50%;
+    }
+
+    div#form{
+        width: 50%;
+    }
+
+    div#content-contact{
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px auto;
+
     }
 
 }
