@@ -704,7 +704,6 @@ section#get-in-touch > p{
 
 div#content-contact{
     display: flex;
-    gap: 30px;
 }
 
 div#inf-contact>h3{
@@ -844,7 +843,7 @@ section#footer-contact{
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 25px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #contact-rigth>h2{
