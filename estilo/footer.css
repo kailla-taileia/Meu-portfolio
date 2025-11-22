@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+    --fundo:#edf3f6;
+    --backround-header:transparent; /*+++cor de fundo*/
+    --background-main:#fffdfd09;
+    --background-section-my-skills:#f9fbfa;
+    --skill-meter:#d7d7d7;
+
+    --texto-principal:#3b3b3bf5;
+    --texto-secundario:#636363f5;
+    --texto-inverso:#efeaeaf1;
+    --porcentagem:#848484eb;;
+
+    --texto-gradient-01:#254da9;
+    --text-gradient-02:#2a64b0; /*cor de backround de alguns elementos*/
+    --text-gradient-03:#28a5cf;
+    --text-gradient-04:#27c6de;
+
+    --text-shadow:#0000004f;
+    --backround-text:#0c4da6;
+    --background-inverso:#3835f8fe;
+    --background-icons-text-highlights:#3d87d22c;
+    
+} 
+
+/*FOOTER*/
+
+section#footer-contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+#contact-rigth>h2{
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04));
+    color: transparent;
+    background-clip: text;
+    font-size: 1.7em;
+    
+
+}
+
+#contact-rigth>p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.85em;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin: 8px auto 50px auto;
+}
+
+div#contact-left{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+hr{
+    width: 60%;
+    display: block;
+    margin: auto;
+    color: var(--texto-principal);
+}
+
+section#footer-end{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+section#footer-end p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--texto-secundario);
+}
+
+section#footer-end span{
+    color: var(--backround-text);
+    font-size: 16px;
+    margin: 0px 3px 0px 3px;
+}

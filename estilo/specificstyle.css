@@ -111,18 +111,29 @@
 
     /*caixa com inf*/
     div.set-of-boxes{
-        width: 80%;
+        width: 90%;
+        gap: 10px
 
     }
 
+    .box-child{
+        height: 160px;
+    }
+
+
+
    /*SEÇÃO MINHAS HABILIDADES*/
+
+   section#my-skills{
+        width: 100%;
+    }
 
     section#my-skills >h1{
         font-size: 1.5em;
     }
 
      #my-skills >p{
-        width: 100%;
+        width: 90%;
     }
 
     .skill-set{
@@ -144,7 +155,61 @@
         width: 80%;
     }
 
-}    
+    section#get-in-touch > p{
+        width: 80%;
+    }
+
+    
+
+    div#content-contact{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    div#inf-contact{
+        width: 100%;
+       
+        
+    }
+
+    div#inf-contact>h3{
+        text-align: center;
+    }
+
+    div#e-mail{
+        justify-content: center;
+        margin-right: -15px;
+    }
+
+    div#telephone{
+        justify-content: center;
+        margin-right: 52px;
+    }
+
+    div#location{
+        justify-content: center;
+    }
+
+    div#availability-card{
+        width: 70%;
+        margin: 30px auto 30px auto;
+    }
+
+    div#form{
+        width: 80%;
+    }
+
+    /*FOOTER*/
+
+    section#footer-contact{
+        flex-direction: column;
+    }
+
+}
+
+  
 
 /*media*/
 @media screen and (min-width:565px) {
@@ -237,6 +302,10 @@
     }
     /*SEÇÃO MINHAS HABILIDADES*/
 
+    section#my-skills{
+        width: 100%;
+    }
+
     section#my-skills >h1{
         font-size: 1.8em;
     }
@@ -279,6 +348,29 @@
         width: 100%;
        
         
+    }
+
+    div#inf-contact>h3{
+        text-align: center;
+    }
+
+    div#e-mail{
+        justify-content: center;
+        margin-right: -15px;
+    }
+
+    div#telephone{
+        justify-content: center;
+        margin-right: 52px;
+    }
+
+    div#location{
+        justify-content: center;
+    }
+
+    div#availability-card{
+        width: 70%;
+        margin: 30px auto 30px auto;
     }
 
     div#form{
@@ -364,7 +456,7 @@
     /*SEÇÃO MINHAS HABILIDADES*/
 
     section#my-skills{
-        width: 50%;
+        width: 100%;
     }
 
     section#my-skills >h1{
@@ -376,7 +468,7 @@
     }
 
     .skill-set{
-         width: 60%;
+         width: 50%;
     }
 
 
@@ -408,6 +500,29 @@
 
     div#inf-contact{
         width: 40%;
+    }
+
+    div#inf-contact>h3{
+        text-align: start;
+    }
+
+    div#e-mail{
+        justify-content: flex-start;
+        margin-right: 0px;
+    }
+
+    div#telephone{
+        justify-content: flex-start;
+        margin-right: 0px;
+    }
+
+    div#location{
+        justify-content: flex-start;
+    }
+
+
+    div#availability-card{
+        width: 100%;
     }
 
     div#form{
