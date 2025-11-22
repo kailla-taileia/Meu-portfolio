@@ -180,12 +180,12 @@
 
     div#e-mail{
         justify-content: center;
-        margin-right: -13px;
+        margin-right: -10px;
     }
 
     div#telephone{
         justify-content: center;
-        margin-right: 58px;
+        margin-right: 56px;
     }
 
     div#location{
@@ -193,8 +193,8 @@
     }
 
     div#availability-card{
-        width: 70%;
-        margin: 30px auto 30px auto;
+        width: 90%;
+        margin: 40px auto 30px auto;
     }
 
     div#form{
@@ -354,14 +354,14 @@
         text-align: center;
     }
 
-    div#e-mail{
+   div#e-mail{
         justify-content: center;
-        margin-right: -15px;
+        margin-right: -10px;
     }
 
     div#telephone{
         justify-content: center;
-        margin-right: 55px;
+        margin-right: 56px;
     }
 
     div#location{
@@ -369,8 +369,8 @@
     }
 
     div#availability-card{
-        width: 70%;
-        margin: 30px auto 30px auto;
+        width: 90%;
+        margin: 40px auto 30px auto;
     }
 
     div#form{
