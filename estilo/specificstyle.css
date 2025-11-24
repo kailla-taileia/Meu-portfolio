@@ -159,7 +159,9 @@
         width: 80%;
     }
 
-    
+
+
+    /*SEÇÃO CONTATO*/
 
     div#content-contact{
         width: 80%;
@@ -178,18 +180,9 @@
         text-align: center;
     }
 
-    div#e-mail{
-        justify-content: center;
-        margin-right: -10px;
-    }
-
-    div#telephone{
-        justify-content: center;
-        margin-right: 56px;
-    }
-
-    div#location{
-        justify-content: center;
+     #contact-set{
+        width: max-content; 
+        margin: 0 auto;
     }
 
     div#availability-card{
@@ -354,18 +347,9 @@
         text-align: center;
     }
 
-   div#e-mail{
-        justify-content: center;
-        margin-right: -10px;
-    }
-
-    div#telephone{
-        justify-content: center;
-        margin-right: 56px;
-    }
-
-    div#location{
-        justify-content: center;
+    #contact-set{
+        width: max-content; 
+        margin: 0 auto;
     }
 
     div#availability-card{
@@ -504,6 +488,11 @@
 
     div#inf-contact>h3{
         text-align: start;
+    }
+
+     #contact-set{
+        margin: 0;
+        width: max-content; 
     }
 
     div#e-mail{

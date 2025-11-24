@@ -124,6 +124,11 @@ span#text-contrast{
 
 }
 
+.access-content>.projects-page:hover{
+    color: var(--texto-inverso);
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04));
+}
+
 .access-content>.contact{
     color: var(--texto-principal);
     background-color: var(--fundo);
@@ -131,6 +136,11 @@ span#text-contrast{
     padding: 8px 15px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.access-content>.contact:hover{
+    color: var(--texto-inverso);
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04))
 }
 
 .social-media{
@@ -642,6 +652,11 @@ div#inf-contact>h3{
     font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#contact-set{
+    display: flex;
+    flex-direction: column;
+}
+
 div#e-mail{
     display: flex;
     margin: 20px 0px 20px 0px;
@@ -702,6 +717,11 @@ div#location>span{
     font-size: 18px;
 }
 
+#icon-the-contact{
+    text-align: center;
+    width: 38px; 
+}
+
 div#availability-card{
     margin-top: 30px;
     padding: 20px;
@@ -759,6 +779,10 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form-actions button:hover{
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04));;
 }
 
 

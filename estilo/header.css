@@ -103,9 +103,8 @@ nav a:hover{
 }
 
 #next-contat:hover{
-    background-color: var(--background-inverso);
+    background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04));
     color: var(--texto-inverso);
-    text-shadow:0.5px 0.5px 1px var(--fundo);
     box-shadow: var(--text-shadow) 1.95px 1.95px 2.6px;
     text-decoration: none;
 }
