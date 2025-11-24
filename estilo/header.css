@@ -32,6 +32,10 @@
     
 }  
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color:var(--fundo);
     min-height: 100vh;

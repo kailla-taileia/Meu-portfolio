@@ -72,6 +72,10 @@
         width: 70%;
     }
 
+    section{
+        scroll-margin-top: 100px;
+    }
+
     /*section sobre mim*/
 
     section#my-skills{
@@ -255,6 +259,10 @@
     #presentation>p#unico{
        width: 55%;
     }
+
+    section {
+    scroll-margin-top: 60px;
+}
 
     /*section sobre mim*/
 

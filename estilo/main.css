@@ -115,30 +115,32 @@ span#text-contrast{
     font-size: 0.9em;
     margin: 30px 0px;
 }
-.access-content>.projects-page{
+.access-content>.projects-page>a{
     color: var(--texto-inverso);
     background-color: var(--backround-text);
     padding: 8px 15px;
     border-radius: 8px;
     font-weight: bold;
+    text-decoration: none;
 
 }
 
-.access-content>.projects-page:hover{
+.access-content>.projects-page>a:hover{
     color: var(--texto-inverso);
     background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04));
 }
 
-.access-content>.contact{
+.access-content>.contact>a{
     color: var(--texto-principal);
     background-color: var(--fundo);
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    text-decoration: none;
 }
 
-.access-content>.contact:hover{
+.access-content>.contact>a:hover{
     color: var(--texto-inverso);
     background-image: linear-gradient(to right, var(--texto-gradient-01), var(--text-gradient-04))
 }
